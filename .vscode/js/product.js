@@ -1,3 +1,5 @@
+var product ;
+
 function displayProduct(idProduct){
     console.log("Display lister product")
     let productSection=document.querySelector("#product");
@@ -9,10 +11,14 @@ function displayProduct(idProduct){
            // Typical action to be performed when the document is ready:
            //document.getElementById("demo").innerHTML = xhttp.responseText;
            console.log(xhttp.responseText)
-           let products= JSON.parse(xhttp.response)
-           console.log(products)
-           products.forEach((product) => {
-               if (product._id == idProduct){
+           product= JSON.parse(xhttp.response)
+           console.log(product)
+           localStorage.setItem("product", JSON.stringify(product));
+           let options ="";
+           product.lenses.forEach( (lense) => {
+            options += `<option>${lense}</option>`
+           } );
+
                 price= product.price.toString().slice(0,-2) + "." + product.price.toString().slice(-2);
 
                content +=`<div class="container px-5 py-24 mx-auto">
@@ -64,8 +70,7 @@ function displayProduct(idProduct){
                        <span class="mr-3">Lense Size</span>
                        <div class="relative">
                          <select class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-base pl-3 pr-10">
-                           <option>35mm 1.4</option>
-                           <option>50mm 1.6</option>
+                          ${options}
                          </select>
                          <span class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
@@ -77,23 +82,40 @@ function displayProduct(idProduct){
                    </div>
                    <div class="flex">
                      <span class="title-font font-medium text-2xl text-gray-900">$${price}</span>
-                     <button class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Add to Cart</button>
+                     <button id="addToCartBtn" class="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Add to Cart</button>
                    </div>
                  </div>
                </div>
-             </div>`             
-            }});
+             </div>`;
 
-           productSection.innerHTML=content;
+           productSection.innerHTML += content;
+           let addToCartBtn = document.getElementById("addToCartBtn");
+           console.log(addToCartBtn)
+           addToCartBtn.addEventListener("click", addToCart);
            
         }
     };
-    xhttp.open("GET", "http://localhost:3000/api/cameras/", true);
+    xhttp.open("GET", "http://localhost:3000/api/cameras/" + idProduct, true);
     xhttp.send();
-    
+    return product;
 }
 var url=document.location.href
 var id=url.split("=")[1]
 
-displayProduct(id);
+product = displayProduct(id);
 
+function addToCart (){
+  alert("add to cart");
+  let productInCart = localStorage.getItem("product"); 
+  let cart = new Array();
+  if (localStorage.getItem("cart")){
+    cart = JSON.parse(localStorage.getItem("cart"))
+  }
+  else {
+    cart = [];
+  }
+  
+  cart.push(productInCart);
+  console.log(productInCart)
+  localStorage.setItem("cart", JSON.stringify(cart));
+}

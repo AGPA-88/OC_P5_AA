@@ -2,7 +2,7 @@ var modalNode=document.querySelector("#modal")
 
 
 function display_modal(){
-var banana="javascriptsucks"
+var banana="If you wish to contact us please do via our email at contact@orinoco.com"
 modalNode.innerHTML=`
 <div class="modal">
     <div class="modal_content">

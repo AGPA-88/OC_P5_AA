@@ -3,7 +3,7 @@
 }
 
 .modal{
-    background-color: rgba($color: yellowgreen, $alpha: 0.6);
+    background-color: rgba($color: orange, $alpha: 0.6);
     position: fixed;
     top: 0;
     left: 0;
@@ -15,10 +15,22 @@
 }
 
 .modal_content{
-    background-color: rgba($color: yellowgreen, $alpha: 1.0);
+    background-color: rgba($color: orange, $alpha: 1.0);
     border: 2px solid black;
     border-radius: 25px;
-    width: 800px;
-    height: 400px;
+    width: 400px;
+    height: 200px;
     padding: 10px;
+}
+.close_modal{
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+#addToCartBtn{
+    margin-top: 100px;
+    
 }
