@@ -106,16 +106,27 @@ product = displayProduct(id);
 
 function addToCart (){
   alert("add to cart");
+  let product = JSON.parse(localStorage.getItem("product"));
   let productInCart = localStorage.getItem("product"); 
   let cart = new Array();
   if (localStorage.getItem("cart")){
     cart = JSON.parse(localStorage.getItem("cart"))
+    let index = cart.findIndex(p => p._id === product._id);
+    console.log(index)
+    if(index == -1) {     
+      product.quantity = 1
+      cart.push(product);
+    } else{  
+      cart[index].quantity += 1
+    }
+
   }
   else {
     cart = [];
+    product.quantity = 1
+    cart.push(product);
   }
   
-  cart.push(productInCart);
   console.log(productInCart)
   localStorage.setItem("cart", JSON.stringify(cart));
 }

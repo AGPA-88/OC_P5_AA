@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Single Product</title>
 </head>
@@ -32,9 +33,8 @@
             <div class="items-center md:flex">
                 <div class="flex flex-col md:flex-row md:mx-6">
                     <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="index.html">Home</a>
-                    <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#">Shop</a>
-                    <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#" onclick="display_modal()">Contact</a>
-                    <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#">About</a>
+                    <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#" onclick="display_modalContact()">Contact</a>
+                    <a class="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0" href="#" onclick="display_modalAbout()">About</a>
                 </div>
 
                 <div class="flex justify-center md:block">
@@ -90,25 +90,20 @@
 
                 <div class="mt-6 lg:mt-0 lg:flex-1">
                     <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+
+                        <div>
+                            <i id="iconCamera" class="fas fa-camera-retro"></i>
+                        </div>
+
+                        <div>
+
+                        </div>
+
                         <div>
                             <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
                             <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Company</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">community</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Community</a>
                             <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Careers</a>
-                        </div>
-
-                        <div>
-                            <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Tec</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Music</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Videos</a>
-                        </div>
-
-                        <div>
-                            <h3 class="text-gray-700 uppercase dark:text-white">Products</h3>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Mega cloud</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Aperion UI</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Meraki UI</a>
                         </div>
 
                         <div>
@@ -123,11 +118,13 @@
             <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
 
             <div>
-                <p class="text-center text-gray-800 dark:text-white">© Brand 2021 - All rights reserved</p>
+                <p class="text-center text-gray-800 dark:text-white">© Orinoco 2021 - All rights reserved</p>
             </div>
         </div>
     </footer> 
 
+    <div id="modal"></div>
+    <script src="modal.js"></script>
     <script src="js/product.js"></script>
     
     

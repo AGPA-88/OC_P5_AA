@@ -1,0 +1,129 @@
+.bg-white {
+  background-color: orange;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal_content {
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 25px;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.close_modal:hover {
+  cursor: pointer;
+}
+
+#addToCartBtn {
+  margin-top: 100px;
+}
+
+#customerDetails {
+  padding: 15px;
+  display: table-column;
+  max-width: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carteLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.nameFixedSize {
+  width: 150px;
+}
+
+#cartBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+#checkoutBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.iconRemove {
+  color: lightgrey;
+  width: 50px;
+  height: 25px;
+  -webkit-transform: translateX(120px);
+          transform: translateX(120px);
+}
+
+.iconRemove:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+#iconCamera {
+  background-color: blue;
+  width: 50px;
+  height: 25px;
+}
+
+#purchaseConfirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+#confirmationImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px;
+}
+/*# sourceMappingURL=style.css.map */
