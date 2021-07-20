@@ -22,17 +22,57 @@
 
 .modal_content {
   background-color: white;
-  border: 2px solid orange;
+  border: solid orange;
   border-radius: 25px;
   width: 400px;
   height: 200px;
-  padding: 10px;
   -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.close_modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: orange;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
 }
 
 .close_modal:hover {
   cursor: pointer;
+}
+
+.modal_mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  font-size: larger;
+  padding: 10px;
+}
+
+.modal_text {
+  padding: 10px;
+}
+
+.about_more {
+  font-size: small;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.about {
+  padding: 10px;
 }
 
 #addToCartBtn {
@@ -112,6 +152,11 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
+  z-index: 10;
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #confirmationImage {
@@ -124,6 +169,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25px;
+  margin-top: -50px;
+  background-image: url("/img/camera-lens-blurred.jpg");
+  width: 750px;
+  height: 400px;
+  z-index: 1;
+}
+
+#blueCircle {
+  visibility: hidden;
 }
 /*# sourceMappingURL=style.css.map */

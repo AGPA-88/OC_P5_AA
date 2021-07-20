@@ -109,6 +109,7 @@ function addToCart (){
   let product = JSON.parse(localStorage.getItem("product"));
   let productInCart = localStorage.getItem("product"); 
   let cart = new Array();
+  let blueCircle = document.querySelector("#blueCircle");
   if (localStorage.getItem("cart")){
     cart = JSON.parse(localStorage.getItem("cart"))
     let index = cart.findIndex(p => p._id === product._id);
@@ -122,6 +123,7 @@ function addToCart (){
 
   }
   else {
+    blueCircle.style.visibility = "visible";
     cart = [];
     product.quantity = 1
     cart.push(product);
