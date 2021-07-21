@@ -1,3 +1,14 @@
+var blueCircle = document.querySelector("#blueCircle")
+if (localStorage.getItem("cart") && localStorage.getItem("cart") != "[]"){
+    blueCircle.style.visibility ="visible";
+    console.log(blueCircle)
+
+}else{
+    blueCircle.style.visibility ="hidden";
+}
+
+
+
 var modalNode=document.querySelector("#modal")
 
 
