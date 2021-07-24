@@ -1,6 +1,5 @@
 function displayProducts(){
     console.log("Display lister product")
-    let productList=document.querySelector("#productList");
     let content="";
 
     var xhttp = new XMLHttpRequest();
@@ -9,10 +8,12 @@ function displayProducts(){
            // Typical action to be performed when the document is ready:
            //document.getElementById("demo").innerHTML = xhttp.responseText;
            console.log(xhttp.responseText)
+           //GET Data from Backend
            let products= JSON.parse(xhttp.response)
            console.log(products)
            
            products.forEach((product) => {
+            // BUILD HTML component
             let price= product.price.toString().slice(0,-2) + "." + product.price.toString().slice(-2);
                content +=`<div class="xl:w-1/4 md:w-1/2 p-4">
                <div class="flex flex-col items-center justify-center max-w-sm mx-auto">
@@ -30,6 +31,8 @@ function displayProducts(){
            </div>`             
            });
 
+           // GET HTML node and inject HTML components
+           let productList=document.querySelector("#productList");
            productList.innerHTML=content;
            
         }

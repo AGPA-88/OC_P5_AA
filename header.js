@@ -13,7 +13,7 @@ var modalNode=document.querySelector("#modal")
 
 
 function display_modalContact(){
-var contact="If you wish to contact us please do via our email at"
+var contact="If you wish to contact us please do via our email at:"
 var mail = "contact@orinoco.com"
 modalNode.innerHTML=`
 <div class="modal">
