@@ -62,10 +62,6 @@ function checkout(total){
     cart = JSON.parse(localStorage.getItem("cart"));
     console.log(cart);
 
-    //cart.forEach(function(product) {
-    //     products.push(JSON.parse(product)._id)
-    //     console.log(product)
-    // });
     for(var k in cart) {
       console.log(k);
       console.log(cart[k]._id);
