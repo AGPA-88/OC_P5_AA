@@ -1,7 +1,7 @@
-var product ;
+var product;
 
-function displayProduct(idProduct){
-    console.log("Display lister product")
+function displayProduct(idProduct) {
+    console.log("Display lister product");
     let productSection=document.querySelector("#product");
     let content="";
 

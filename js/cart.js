@@ -33,7 +33,6 @@ console.log(totalPrice);
 let productListNode = document.getElementById("productList");
 productListNode.innerHTML = productListContent;
 let productRemoves = document.querySelectorAll(".iconRemove");
-console.log(productRemoves);
 productRemoves.forEach(productRemove => productRemove.addEventListener("click", removeProduct));
 
 function removeProduct(event){

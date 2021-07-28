@@ -1,5 +1,5 @@
-function displayProducts(){
-    console.log("Display lister product")
+function displayProducts() {
+    console.log("Display lister product");
     let content="";
 
     var xhttp = new XMLHttpRequest();
