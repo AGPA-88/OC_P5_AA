@@ -1,5 +1,4 @@
 function displayProducts() {
-    console.log("Display lister product");
     let content="";
 
     var xhttp = new XMLHttpRequest();
@@ -7,10 +6,9 @@ function displayProducts() {
         if (this.readyState == 4 && this.status == 200) {
            // Typical action to be performed when the document is ready:
            //document.getElementById("demo").innerHTML = xhttp.responseText;
-           console.log(xhttp.responseText)
+           //console.log(xhttp.responseText)
            //GET Data from Backend
            let products= JSON.parse(xhttp.response)
-           console.log(products)
            
            products.forEach((product) => {
             // BUILD HTML component

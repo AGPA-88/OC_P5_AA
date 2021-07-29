@@ -1,7 +1,6 @@
 var product;
 
 function displayProduct(idProduct) {
-    console.log("Display lister product");
     let productSection=document.querySelector("#product");
     let content="";
 
@@ -10,9 +9,7 @@ function displayProduct(idProduct) {
         if (this.readyState == 4 && this.status == 200) {
            // Typical action to be performed when the document is ready:
            //document.getElementById("demo").innerHTML = xhttp.responseText;
-           console.log(xhttp.responseText)
            product= JSON.parse(xhttp.response)
-           console.log(product)
            localStorage.setItem("product", JSON.stringify(product));
            let options ="";
            product.lenses.forEach( (lense) => {
@@ -90,7 +87,6 @@ function displayProduct(idProduct) {
 
            productSection.innerHTML += content;
            let addToCartBtn = document.getElementById("addToCartBtn");
-           console.log(addToCartBtn)
            addToCartBtn.addEventListener("click", addToCart);
            
         }

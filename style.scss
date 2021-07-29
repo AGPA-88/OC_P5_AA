@@ -139,3 +139,17 @@
 #blueCircle{
     visibility: hidden;
 }
+
+#buttonOrder{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+#orderInformation{
+    visibility: hidden;
+}
+
+#product h1{
+    visibility: hidden;
+}

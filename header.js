@@ -46,7 +46,6 @@ function display_modalAbout(){
     }
 
 function hide_modal(e){
-    console.log("Using e.currentTarget:", e.currentTarget.dataset.id);
     modalNode.innerHTML=``
     }
 
