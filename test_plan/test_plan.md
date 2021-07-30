@@ -17,7 +17,7 @@ remote: Counting objects: 100% (40/40), done.
 remote: Compressing objects: 100% (26/26), done.  
 remote: Total 164 (delta 16), reused 30 (delta 14), pack-reused 124  
 Receiving objects: 100% (164/164), 7.41 MiB | 1.55 MiB/s, done.  
-Resolving deltas: 100% (63/63), done.
+Resolving deltas: 100% (63/63), done. 
 ```
 
 ### Test 2 : Install backend

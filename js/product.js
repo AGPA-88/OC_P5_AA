@@ -9,11 +9,11 @@ function displayProduct(idProduct) {
         if (this.readyState == 4 && this.status == 200) {
            // Typical action to be performed when the document is ready:
            //document.getElementById("demo").innerHTML = xhttp.responseText;
-           product= JSON.parse(xhttp.response)
+           product= JSON.parse(xhttp.response);
            localStorage.setItem("product", JSON.stringify(product));
            let options ="";
            product.lenses.forEach( (lense) => {
-            options += `<option>${lense}</option>`
+            options += `<option>${lense}</option>`;
            } );
 
                 price= product.price.toString().slice(0,-2) + "." + product.price.toString().slice(-2);
@@ -95,8 +95,8 @@ function displayProduct(idProduct) {
     xhttp.send();
     return product;
 }
-var url=document.location.href
-var id=url.split("=")[1]
+var url=document.location.href;
+var id=url.split("=")[1];
 
 product = displayProduct(id);
 
@@ -107,22 +107,22 @@ function addToCart (){
   let blueCircle = document.querySelector("#blueCircle");
   blueCircle.style.visibility = "visible";
   if (localStorage.getItem("cart")){
-    cart = JSON.parse(localStorage.getItem("cart"))
+    cart = JSON.parse(localStorage.getItem("cart"));
     let index = cart.findIndex(p => p._id === product._id);
     if(index == -1) {     
-      product.quantity = 1
+      product.quantity = 1;
       cart.push(product);
     } else{  
-      cart[index].quantity += 1
+      cart[index].quantity += 1;
     }
 
   }
   else {
     cart = [];
-    product.quantity = 1
+    product.quantity = 1;
     cart.push(product);
   }
   
-  console.log(productInCart)
+  console.log(productInCart);
   localStorage.setItem("cart", JSON.stringify(cart));
 }
