@@ -6,8 +6,7 @@
 
 Action :  
 
-- Run `git clone``https://github.com/OpenClassrooms-Student-Center/JWDP5` in a folder  
-
+- Run `git clone``https://github.com/OpenClassrooms-Student-Center/JWDP5` in a folder; 
 
 Expect result :
 
@@ -25,8 +24,7 @@ Resolving deltas: 100% (63/63), done.
 
 action : 
 
-- Run `npm install` in the new JWDP5 cloned  
-
+- Run `npm install` in the new JWDP5 cloned ;
 
 Expect result :
 
@@ -40,8 +38,6 @@ found 0 vulnerabilities
 Action :
 
 - Run `node server` and in another terminal, run `curl -I` `http://localhost:3000/api/cameras/`
-
-
 
 Expect result :
 
@@ -62,9 +58,7 @@ Connection: keep-alive
 
 Action :  
 
-- Open [Homepage](https://agpa-88.github.io/OC_P5_AA/index.html) in your browser
-
-
+- Open [Homepage](https://agpa-88.github.io/OC_P5_AA/index.html) in your browser;
 
 Expected result :
 
@@ -74,21 +68,17 @@ Expected result :
 
 Action :  
 
-- Click on the Check More of a product (e.g. ZURSS 50S)
-
-
+- Click on the Check More of a product (e.g. ZURSS 50S);
 
 Expected result :
 
 ![](2021-07-30-09-48-55-image.png)
 
-
-
 ### Test 6: Add Product to cart
 
 Action :
 
-- Click on the Add to Cart button
+- Click on the Add to Cart button;
 
 Expected result :
 
@@ -100,13 +90,11 @@ Expected result :
 
 ![](2021-07-30-09-47-49-image.png)
 
-
-
 ### Test 7: Remove product from cart
 
 Action : 
 
-- Open your cart and click on the trash icon next to the product you wish to remove
+- Open your cart and click on the trash icon next to the product you wish to remove;
 
 Expected result :
 
@@ -118,50 +106,64 @@ Expected result :
 
 ![](2021-07-30-09-50-57-image.png)
 
-### Test 8: Add 2 products to cart
+### Test 8: Order with an empty cart
+
+Action :
+
+- Confirm that your cart is empty;
+
+- Click on the Order button with an empty cart;
+
+Expected result :
+
+![](2021-07-30-10-26-41-image.png)
+
+### Test 9: Add 2 products to cart
 
 Action : 
 
-- Open 2 different product pages and add them to your cart
+- Go back to the Homepage;
 
-
+- Open 2 different product pages and add them to your cart;
 
 Expected result :
 
 ![](2021-07-30-09-52-48-image.png)
 
-
-
-### Test 9: Add twice the same products to cart
+### Test 10: Add twice the same products to cart
 
 Action :
 
-- Go to a product page and add the same product twice in the cart
+- Remove all products from cart;
+
+- Go to a product page and add the same product twice in the cart;
 
 Expected result :
 
 ![](2021-07-30-09-53-26-image.png)
 
+### 
 
-
-### Test 10: Order products without entering information
+### Test 11: Order products without entering information
 
 Action : 
 
-- Click on the Order button to open the form section and, without adding any information into the form, click on the Checkout button
+- Confirm that your cart is not empty;
+
+- Click on the Order button to open the form section and, without adding any information into the form, click on the Checkout button;
 
 Expected result :
 
 ![](2021-07-30-10-00-13-image.png)
 
-
-
-### Test 11: Order products with all information correctly set
+### Test 12: Order products with all information correctly set
 
 Action :
 
-- After clicking on the Order button add your information to the Customer Details form and then click on the Checkout button
+- Confirm that your cart is not empty;
+
+- After clicking on the Order button add your information to the Customer Details form and then click on the Checkout button;
 
 Expected result :
 
-![](2021-07-30-09-58-12-image.png)
+![](2021-07-30-10-33-27-image.png)

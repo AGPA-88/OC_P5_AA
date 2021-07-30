@@ -97,7 +97,12 @@ btnCheckout.addEventListener("click", (e) => {
 let btnOrder = document.getElementById("order");
 btnOrder.addEventListener("click", (e) => { 
   e.preventDefault();
+  if (localStorage.getItem("cart") && localStorage.getItem("cart") != "[]"){
   document.getElementById("orderInformation").style.visibility="visible";
   document.location.href="#orderInformation";
+}
+else{
+  alert("You can't order with an empty cart!")
+}
 }
 );
