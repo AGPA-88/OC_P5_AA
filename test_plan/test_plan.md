@@ -2,17 +2,13 @@
 
 ## Getting started
 
-- GIT Clone the [GitHub - OpenClassrooms-Student-Center/JWDP5: Student repo for project 5 of the Junior Web Developer path](https://github.com/OpenClassrooms-Student-Center/JWDP5) repository;
-  
-  `git clone https://github.com/OpenClassrooms-Student-Center/JWDP5`
+### Test 1 : Clone the repo
 
-- From within the project folder, run `npm install`. You can then run the server with `node server`.
+Action :  
 
-- After installing Node, run npm inside the project folder that you cloned
+- Run `git clone``https://github.com/OpenClassrooms-Student-Center/JWDP5` in a folder  
 
-Test 1 : Clone the repo  
-action :  
-run `git clone``https://github.com/OpenClassrooms-Student-Center/JWDP5` in a folder  
+
 Expect result :
 
 ```
@@ -25,8 +21,13 @@ Receiving objects: 100% (164/164), 7.41 MiB | 1.55 MiB/s, done.
 Resolving deltas: 100% (63/63), done.
 ```
 
-Test 2 : Install backend  
-action : run `npm install` in the new JWDP5 cloned  
+### Test 2 : Install backend
+
+action : 
+
+- Run `npm install` in the new JWDP5 cloned  
+
+
 Expect result :
 
 ```
@@ -34,10 +35,13 @@ npm WARN [orinoco-backend@1.0.0](mailto:orinoco-backend@1.0.0) No repository fie
 found 0 vulnerabilities
 ```
 
-Test 3 : Run backend  
+### Test 3 : Run backend
+
 Action :
 
-run `node server` and in another terminal, run `curl -I` `http://localhost:3000/api/cameras/`
+- Run `node server` and in another terminal, run `curl -I` `http://localhost:3000/api/cameras/`
+
+
 
 Expect result :
 
@@ -54,25 +58,110 @@ Date: Thu, 29 Jul 2021 21:38:10 GMT
 Connection: keep-alive
 ```
 
-Test 4: Open Homepage
+### Test 4: Open Homepage
 
 Action :  
-Open [Homepage](https://agpa-88.github.io/OC_P5_AA/index.html) in your browser
+
+- Open [Homepage](https://agpa-88.github.io/OC_P5_AA/index.html) in your browser
+
+
 
 Expected result :
 
 ![](2021-07-29-23-53-44-image.png)
 
-Test 5: Open Product page
+### Test 5: Open Product page
 
-Test 6: Add Product to cart
+Action :  
 
-Test 7: Remove product from cart
+- Click on the Check More of a product (e.g. ZURSS 50S)
 
-Test 8: Add 2 products to cart
 
-Test 9: Add twice the same products to cart
 
-Test 10: Order products without entering information
+Expected result :
 
-Test 11: Order products with all information correctly set
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-48-55-image.png)
+
+
+
+### Test 6: Add Product to cart
+
+Action :
+
+- Click on the Add to Cart button
+
+Expected result :
+
+- Your cart icon should look like this before adding any product to the cart:
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-48-22-image.png)
+
+- Your cart icon should look like this after adding any product to the cart
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-47-49-image.png)
+
+
+
+### Test 7: Remove product from cart
+
+Action : 
+
+- Open your cart and click on the trash icon next to the product you wish to remove
+
+Expected result :
+
+- Your cart should look like this after adding a product:
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-50-15-image.png)
+
+- Your cart should look like this after removing the product:
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-50-57-image.png)
+
+### Test 8: Add 2 products to cart
+
+Action : 
+
+- Open 2 different product pages and add them to your cart
+
+
+
+Expected result :
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-52-48-image.png)
+
+
+
+### Test 9: Add twice the same products to cart
+
+Action :
+
+- Go to a product page and add the same product twice in the cart
+
+Expected result :
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-53-26-image.png)
+
+
+
+### Test 10: Order products without entering information
+
+Action : 
+
+- Click on the Order button to open the form section and, without adding any information into the form, click on the Checkout button
+
+Expected result :
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-10-00-13-image.png)
+
+
+
+### Test 11: Order products with all information correctly set
+
+Action :
+
+- After clicking on the Order button add your information to the Customer Details form and then click on the Checkout button
+
+Expected result :
+
+![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-58-12-image.png)

@@ -82,7 +82,7 @@ function checkout(total){
   if (contact.firstName != "" && contact.lastName != "" && contact.email != "" && contact.address != "" && contact.city != ""){
     xhttp.send(data);
   } else{
-    alert("please all field are required !");
+    alert("Please, all fields are required in order to continue your purchase!");
   }
  
 }
