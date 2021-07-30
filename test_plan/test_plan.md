@@ -80,7 +80,7 @@ Action :
 
 Expected result :
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-48-55-image.png)
+![](2021-07-30-09-48-55-image.png)
 
 
 
@@ -94,11 +94,11 @@ Expected result :
 
 - Your cart icon should look like this before adding any product to the cart:
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-48-22-image.png)
+![](2021-07-30-09-48-22-image.png)
 
 - Your cart icon should look like this after adding any product to the cart
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-47-49-image.png)
+![](2021-07-30-09-47-49-image.png)
 
 
 
@@ -112,11 +112,11 @@ Expected result :
 
 - Your cart should look like this after adding a product:
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-50-15-image.png)
+![](2021-07-30-09-50-15-image.png)
 
 - Your cart should look like this after removing the product:
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-50-57-image.png)
+![](2021-07-30-09-50-57-image.png)
 
 ### Test 8: Add 2 products to cart
 
@@ -128,7 +128,7 @@ Action :
 
 Expected result :
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-52-48-image.png)
+![](2021-07-30-09-52-48-image.png)
 
 
 
@@ -140,7 +140,7 @@ Action :
 
 Expected result :
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-53-26-image.png)
+![](2021-07-30-09-53-26-image.png)
 
 
 
@@ -152,7 +152,7 @@ Action :
 
 Expected result :
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-10-00-13-image.png)
+![](2021-07-30-10-00-13-image.png)
 
 
 
@@ -164,4 +164,4 @@ Action :
 
 Expected result :
 
-![](C:\Users\localUser\AppData\Roaming\marktext\images\2021-07-30-09-58-12-image.png)
+![](2021-07-30-09-58-12-image.png)
