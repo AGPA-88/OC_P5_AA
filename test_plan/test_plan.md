@@ -1,5 +1,7 @@
 # TEST PLAN
 
+
+
 ## Getting started
 
 ### Test 1 : Clone the repo
@@ -20,6 +22,16 @@ Receiving objects: 100% (164/164), 7.41 MiB | 1.55 MiB/s, done.
 Resolving deltas: 100% (63/63), done. 
 ```
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
 ### Test 2 : Install backend
 
 action : 
@@ -32,6 +44,16 @@ Expect result :
 npm WARN [orinoco-backend@1.0.0](mailto:orinoco-backend@1.0.0) No repository field.added 57 packages from 41 contributors and audited 57 packages in 1.004s  
 found 0 vulnerabilities
 ```
+
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
 
 ### Test 3 : Run backend
 
@@ -54,6 +76,16 @@ Date: Thu, 29 Jul 2021 21:38:10 GMT
 Connection: keep-alive
 ```
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
 ### Test 4: Open Homepage
 
 Action :  
@@ -64,6 +96,16 @@ Expected result :
 
 ![](2021-07-29-23-53-44-image.png)
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
 ### Test 5: Open Product page
 
 Action :  
@@ -73,6 +115,16 @@ Action :
 Expected result :
 
 ![](2021-07-30-09-48-55-image.png)
+
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
 
 ### Test 6: Add Product to cart
 
@@ -90,6 +142,16 @@ Expected result :
 
 ![](2021-07-30-09-47-49-image.png)
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
 ### Test 7: Remove product from cart
 
 Action : 
@@ -106,6 +168,18 @@ Expected result :
 
 ![](2021-07-30-09-50-57-image.png)
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
+
+
 ### Test 8: Order with an empty cart
 
 Action :
@@ -117,6 +191,16 @@ Action :
 Expected result :
 
 ![](2021-07-30-10-26-41-image.png)
+
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
 
 ### Test 9: Add 2 products to cart
 
@@ -130,6 +214,18 @@ Expected result :
 
 ![](2021-07-30-09-52-48-image.png)
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
+
+
 ### Test 10: Add twice the same products to cart
 
 Action :
@@ -141,6 +237,14 @@ Action :
 Expected result :
 
 ![](2021-07-30-09-53-26-image.png)
+
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
 
 ### 
 
@@ -156,6 +260,18 @@ Expected result :
 
 ![](2021-07-30-10-00-13-image.png)
 
+Test result:
+
+As expected: Y | N
+
+Notes:
+
+
+
+
+
+
+
 ### Test 12: Order products with all information correctly set
 
 Action :
@@ -167,3 +283,11 @@ Action :
 Expected result :
 
 ![](2021-07-30-10-33-27-image.png)
+
+
+
+Test result:
+
+As expected: Y | N
+
+Notes:
