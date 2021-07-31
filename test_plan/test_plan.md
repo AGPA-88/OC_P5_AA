@@ -90,7 +90,7 @@ Notes:
 
 Action :  
 
-- Open [Homepage](https://agpa-88.github.io/OC_P5_AA/index.html) in your browser;
+- Open https://agpa-88.github.io/OC_P5_AA/index.html in your browser;
 
 Expected result :
 
