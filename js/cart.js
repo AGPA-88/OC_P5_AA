@@ -38,7 +38,6 @@ productRemoves.forEach(productRemove => productRemove.addEventListener("click", 
 
 //Remove product from cart
 function removeProduct(event){
-  alert(event.target.title);
   let idToRemove = parseInt(event.target.title.split("#")[1]);
   let cart = new Array();
   cart = JSON.parse(localStorage.getItem("cart"));
